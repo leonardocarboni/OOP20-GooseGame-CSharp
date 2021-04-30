@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP20-GooseGame-Carboni", "OOP20-GooseGame-Carboni\OOP20-GooseGame-Carboni.csproj", "{2641C821-6B6E-45E3-A78B-68AA09D5A33F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Run|Any CPU = Run|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2641C821-6B6E-45E3-A78B-68AA09D5A33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2641C821-6B6E-45E3-A78B-68AA09D5A33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2641C821-6B6E-45E3-A78B-68AA09D5A33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2641C821-6B6E-45E3-A78B-68AA09D5A33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2641C821-6B6E-45E3-A78B-68AA09D5A33F}.Run|Any CPU.ActiveCfg = Run|Any CPU
+		{2641C821-6B6E-45E3-A78B-68AA09D5A33F}.Run|Any CPU.Build.0 = Run|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A19A7B5A-2FA5-47D4-BEFF-09D6AE5B7F7D}
+	EndGlobalSection
+EndGlobal
