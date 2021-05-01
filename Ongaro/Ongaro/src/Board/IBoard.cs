@@ -1,4 +1,5 @@
 ﻿using Ongaro.box;
+using Ongaro.player;
 using System.Collections.Generic;
 
 namespace Ongaro.board
