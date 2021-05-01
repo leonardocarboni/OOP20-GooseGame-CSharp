@@ -13,23 +13,12 @@ namespace Ongaro.box
         public static readonly Box ROCK_PAPER_SCISSORS = new Box(6, "ROCK_PAPER_SCISSORS", BoxType.MINIGAMES);
         public static readonly Box CABLE_CONNECT = new Box(7, "CABLE_CONNECT", BoxType.MINIGAMES);
         public static readonly Box PHRASE_CATCH = new Box(7, "PHRASE_CATCH", BoxType.MINIGAMES);
+
         public readonly BoxType boxType;
+
         public Box(int key, string value, BoxType type) : base(key, value)
         {
             this.boxType = type;
-        }
-
-        public static ReadOnlyCollection<Box> GetValues()
-        {
-            return GetBaseValues();
-        }
-        public static BoxType GetBoxType(Box b)
-        {
-            return b.boxType;
-        }
-        public static Box GetByKey(int key)
-        {
-            return GetBaseByKey(key);
         }
 
         public static List<Box> getBoxes()
