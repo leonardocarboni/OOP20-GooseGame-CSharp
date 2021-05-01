@@ -12,30 +12,30 @@ namespace Ongaro
         public void QueueTest2()
         {
             IQueue ql = new Queue();
-            List<Player> list = new List<Player>();
+            List<IPlayer> list = new List<IPlayer>();
             list.Add(new Player("Ciao", PlayerColor.PINK));
             list.Add(new Player("Ciao2", PlayerColor.PINK));
             list.Add(new Player("Ciao4", PlayerColor.PINK));
             ql.StartingQueue = list;
             ql.resetIterator();
 
-            Assert.AreEqual<Player>(list[0], ql.next(), "Test");
-            Assert.AreEqual(list[1], ql.next(), "Test");
-            Assert.AreEqual(list[2], ql.next(), "Test");
+            Assert.AreEqual(list[0], ql.next());
+            Assert.AreEqual(list[1], ql.next());
+            Assert.AreEqual(list[2], ql.next());
 
             for (int i = 0; i < 3; i++)
             {
                 ql.next();
             }
 
-            Assert.AreEqual(list[2], ql.Current, "Test");
+            Assert.AreEqual(list[2], ql.Current);
         }
 
         [TestMethod]
         public void QueueTest1()
         {
             IQueue ql = new Queue();
-            Dictionary<Player, int> mapResult = new Dictionary<Player, int>();
+            Dictionary<IPlayer, int> mapResult = new Dictionary<IPlayer, int>();
             List<Player> listExpected = new List<Player>();
             Player p = new Player("Ciao", PlayerColor.PINK);
             Player p1 = new Player("Ciao2", PlayerColor.PINK);
@@ -52,7 +52,21 @@ namespace Ongaro
 
             CollectionAssert.AreEqual(listExpected, ql.StartingQueue);
         }
+
         [TestMethod]
-        
+        public void QueueTest3()
+        {
+            IQueue ql = new Queue();
+            List<IPlayer> list = new List<IPlayer>();
+            IPlayer l = new Player("Ciao", PlayerColor.PINK);
+            list.Add(l);
+            list.Add(new Player("Ciao2", PlayerColor.PINK));
+            list.Add(new Player("Ciao4", PlayerColor.PINK));
+            ql.StartingQueue = list;
+            ql.resetIterator();
+
+            list = new List<IPlayer>();
+            Assert.AreEqual(l, ql.next());
+        }
     }
 }
