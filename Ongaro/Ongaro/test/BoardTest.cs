@@ -5,9 +5,11 @@ using System.Collections.Generic;
 
 namespace Ongaro.test
 {
-    class BoardTest
+    [TestClass]
+    public class BoardTest
     {
-        public void BoardTest1()
+        [TestMethod]
+        public void CreationSmallestBoard()
         {
             IBoard board = new Board();
             List<Box> listExpected = new List<Box>();
@@ -18,7 +20,7 @@ namespace Ongaro.test
         }
 
         [TestMethod]
-        public void BoardTest2()
+        public void CreateBoard()
         {
             IBoard board = new Board();
             List<Box> listExpected = new List<Box>();
@@ -36,7 +38,7 @@ namespace Ongaro.test
         }
 
         [TestMethod]
-        public void BoardTest3()
+        public void LaunchException()
         {
             IBoard board = new Board();
             Assert.ThrowsException<System.Exception>(() => board.Size = 1);
