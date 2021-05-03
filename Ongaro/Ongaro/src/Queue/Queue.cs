@@ -8,14 +8,14 @@ namespace Ongaro.queue
     public class Queue : IQueue
     {
         private List<IPlayer> startingQueue;
-        private Player current;
+        private IPlayer current;
         private IEnumerator playerIterator;
 
         public IPlayer Current => current;
 
         public List<IPlayer> StartingQueue
         {
-            set { startingQueue = deepCopy(value); }
+            set { startingQueue = value; }
             get => startingQueue;
         }
 
@@ -24,7 +24,6 @@ namespace Ongaro.queue
             if (!playerIterator.MoveNext())
             {
                 resetIterator();
-                next();
             }
             current = (Player)playerIterator.Current;
             return current;
@@ -41,6 +40,7 @@ namespace Ongaro.queue
         public void resetIterator()
         {
             playerIterator = startingQueue.GetEnumerator();
+            current = next();
         }
 
         /**

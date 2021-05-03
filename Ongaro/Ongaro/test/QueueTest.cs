@@ -9,7 +9,7 @@ namespace Ongaro
     public class QueueTest
     {
         [TestMethod]
-        public void QueueTest2()
+        public void Iterate()
         {
             IQueue ql = new Queue();
             List<IPlayer> list = new List<IPlayer>();
@@ -19,7 +19,7 @@ namespace Ongaro
             ql.StartingQueue = list;
             ql.resetIterator();
 
-            Assert.AreEqual(list[0], ql.next());
+            Assert.AreEqual(list[0], ql.Current);
             Assert.AreEqual(list[1], ql.next());
             Assert.AreEqual(list[2], ql.next());
 
@@ -32,7 +32,7 @@ namespace Ongaro
         }
 
         [TestMethod]
-        public void QueueTest1()
+        public void CheckOrdering()
         {
             IQueue ql = new Queue();
             Dictionary<IPlayer, int> mapResult = new Dictionary<IPlayer, int>();
@@ -51,22 +51,6 @@ namespace Ongaro
             listExpected.Add(p1);
 
             CollectionAssert.AreEqual(listExpected, ql.StartingQueue);
-        }
-
-        [TestMethod]
-        public void QueueTest3()
-        {
-            IQueue ql = new Queue();
-            List<IPlayer> list = new List<IPlayer>();
-            IPlayer l = new Player("Ciao", PlayerColor.PINK);
-            list.Add(l);
-            list.Add(new Player("Ciao2", PlayerColor.PINK));
-            list.Add(new Player("Ciao4", PlayerColor.PINK));
-            ql.StartingQueue = list;
-            ql.resetIterator();
-
-            list = new List<IPlayer>();
-            Assert.AreEqual(l, ql.next());
         }
     }
 }
