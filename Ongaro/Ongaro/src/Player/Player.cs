@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ongaro.exception;
+using System;
 
 namespace Ongaro.player
 {
@@ -12,9 +13,8 @@ namespace Ongaro.player
         {
             if ("".Equals(this.name))
             {
-                throw new Exception();
+                throw new IllegalArgumentException();
             }
-
             this.name = name;
             this.color = color;
             boardPosition = 0;

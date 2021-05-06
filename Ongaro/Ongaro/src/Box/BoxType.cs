@@ -2,13 +2,13 @@
 {
     public enum BoxType
     {
-        /**
-         * A Normal Box where nothing happen.
-         */
+        /// <summary>
+        /// A Normal Box where nothing happen.
+        /// </summary>
         NORMAL,
-        /**
-        * A Minigames Box.
-         */
+        /// <summary>
+        /// A Minigames Box.
+        /// </summary>
         MINIGAMES
     }
 }

@@ -42,16 +42,5 @@ namespace Ongaro.queue
             playerIterator = startingQueue.GetEnumerator();
             current = next();
         }
-
-        /**
-         * Create a deep copy of the list to avoid problem when list passed as parameter
-         * will change.
-         * @param list
-         * @return list of players
-         */
-        private List<IPlayer> deepCopy(List<IPlayer> players)
-        {
-            return new List<IPlayer>(players);
-        }
     }
 }

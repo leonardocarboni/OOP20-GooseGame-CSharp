@@ -8,6 +8,7 @@ namespace Ongaro.test
     [TestClass]
     public class GameTest
     {
+        private static readonly int BOARD_SIZE = 42;
         [TestMethod]
         public void TestGame()
         {
@@ -25,6 +26,7 @@ namespace Ongaro.test
             } while (!g.EndGame());
 
             Assert.IsTrue(g.EndGame());
+            Assert.IsTrue(list[0].BoardPosition >= BOARD_SIZE);
         }
     }
 }

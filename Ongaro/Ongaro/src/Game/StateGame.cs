@@ -1,29 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ongaro.game
+﻿namespace Ongaro.game
 {
     enum StateGame
     {
-        /**
-     * Start Type used to initialize game.
-     */
+        /// <summary>
+        /// Start Type used to initialize game.
+        /// </summary>
         START,
 
-        /**
-         * Phrase where players roll dice to choose starting queue.
-         */
+        /// <summary>
+        /// Phrase where players roll dice to choose starting queue.
+        /// </summary>
         CHOOSE_STARTING_QUEUE,
 
-        /**
-         * Phrase where all players play.
-         */
+        /// <summary>
+        /// Phrase where all players play.
+        /// </summary>
         CONTINUE,
 
-        /**
-         * End Phrase.
-         */
+        /// <summary>
+        /// End Phrase.
+        /// </summary>
         END
     }
 }

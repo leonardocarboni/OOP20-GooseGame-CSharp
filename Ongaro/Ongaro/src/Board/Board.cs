@@ -1,6 +1,6 @@
 ﻿using Ongaro.box;
+using Ongaro.exception;
 using Ongaro.player;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -20,7 +20,7 @@ namespace Ongaro.board
             {
                 if (value < BOARD_LIMIT)
                 {
-                    throw new Exception();
+                    throw new IllegalArgumentException();
                 }
                 size = value;
                 boxes = new List<Box>();
@@ -53,12 +53,11 @@ namespace Ongaro.board
             return boxes.ElementAt(p.BoardPosition);
         }
 
-        /*
-         * Function to get all boxes that matches the filter
-         * 
-         * @param type of Boxes to filter
-         * @return list of boxes
-         */
+        /// <summary>
+        /// Get all boxes that matches the filter.
+        /// </summary>
+        /// <param name="type"> Type of Boxes to filter </param>
+        /// <returns> list of boxes </returns>
         private List<Box> getAllBoxesByType(BoxType type)
         {
             List<Box> list = new List<Box>();

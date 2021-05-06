@@ -21,6 +21,10 @@ namespace Ongaro.box
             this.boxType = type;
         }
 
+        /// <summary>
+        /// Get all type of box
+        /// </summary>
+        /// <returns> list of box</returns>
         public static List<Box> getBoxes()
         {
             List<Box> list = new List<Box>();

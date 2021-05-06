@@ -2,24 +2,24 @@
 {
     public enum PlayerColor
     {
-        /**
-         * Pink Color.
-         */
+        /// <summary>
+        /// Pink Color.
+        /// </summary>
         PINK,
 
-        /**
-         * Green Color.
-         */
+        /// <summary>
+        /// Green Color.
+        /// </summary>
         GREEN,
 
-        /**
-         * Red Color.
-         */
+        /// <summary>
+        /// Red Color.
+        /// </summary>
         RED,
 
-        /**
-         * Blue Color.
-         */
+        /// <summary>
+        /// Blue Color.
+        /// 
         BLUE
     }
 }
