@@ -2,12 +2,12 @@
 
 namespace OOP20_GooseGame_Carboni_Test
 {
-    internal class PhraseImpl : Phrase
+    internal class PhraseImpl : IPhrase
     {
         readonly private static string PHRASES_FILENAME = "..\\sentences.txt";
         private string phrase;
 
-        public string generatePhrase()
+        public string GeneratePhrase()
         {
             var lines = File.ReadAllLines(PHRASES_FILENAME);
             var r = new System.Random();
@@ -17,7 +17,7 @@ namespace OOP20_GooseGame_Carboni_Test
             return line;
         }
 
-        public int checkText(string textRead)
+        public int CheckText(string textRead)
         {
             int errors = System.Math.Abs(phrase.Length - textRead.Length);
 
@@ -31,7 +31,7 @@ namespace OOP20_GooseGame_Carboni_Test
             return errors;
         }
 
-        public void setPhrase(string sentence)
+        public void SetPhrase(string sentence)
         {
             phrase = sentence;
         }

@@ -1,24 +1,18 @@
 ﻿namespace OOP20_GooseGame_Carboni_Test
 {
-    internal interface Phrase
+    internal interface IPhrase
     {
-        /**
-         * Generates a random sentence.
-         * @return a random sentence.
-        */
-        string generatePhrase();
+        ///<summary>Generates a random sentence.</summary>
+        ///<returns>a random sentence.</returns>
+        string GeneratePhrase();
 
-        /**
-         * Confronts the chosen sentence to the one written by the user.
-         * @param textRead - the sentence written by the user.
-         * @return the number of errors in the sentence written.
-         */
-        int checkText(string textRead);
+        ///<summary>Confronts the chosen sentence to the one written by the user.</summary>
+        ///<param name="textRead">the sentence written by the user.</param>
+        ///<returns>the number of errors in the sentence written.</returns>
+        int CheckText(string textRead);
 
-        /**
-         * [Test] sets a sentence as the phrase.
-         * @param sentence - tha phrase.
-         */
-        void setPhrase(string sentence);
+        ///<summary>[Test] sets a sentence as the phrase.</summary>
+        ///<param name="sentence">the phrase.</param>
+        void SetPhrase(string sentence);
     }
 }

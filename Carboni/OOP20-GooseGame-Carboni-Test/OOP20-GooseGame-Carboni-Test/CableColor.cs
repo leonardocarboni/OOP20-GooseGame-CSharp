@@ -25,8 +25,7 @@ namespace OOP20_GooseGame_Carboni_Test
          */
         public static CableColor YELLOW { get { return new CableColor("#CFCF00"); } }
 
-
-        static CableColor[] getColors()
+        public static CableColor[] GetColors()
         {
             return new CableColor[] { RED, BLUE, GREEN, YELLOW };
         }
@@ -35,10 +34,10 @@ namespace OOP20_GooseGame_Carboni_Test
          * Generates a random ordered array of colors.
          * @return a random ordered array of colors.
          */
-        public static CableColor[] getRandomColors()
+        public static CableColor[] GetRandomColors()
         {
             Random rand = new Random();
-            CableColor[] randomColorsArray = getColors();
+            CableColor[] randomColorsArray = GetColors();
 
             //shuffle end colors array
             for (int i = 0; i < randomColorsArray.Length; i++)
@@ -48,31 +47,10 @@ namespace OOP20_GooseGame_Carboni_Test
                 randomColorsArray[randomIndexToSwap] = randomColorsArray[i];
                 randomColorsArray[i] = temp;
             }
-
-            /*
-            CableColor[] c = getColors();
-            List<CableColor> inputList = c.ToList();
-            CableColor[] output = new CableColor[c.Length];
-            Random randomizer = new Random();
-            int i = 0;
-
-            while (inputList.Count > 0)
-            {
-                int index = randomizer.Next(inputList.Count);
-                Console.WriteLine(index);
-                output[i++] = inputList[index];
-                inputList.RemoveAt(index);
-            }*/
-            /*
-            Random rnd = new Random();
-
-            CableColor[] randomColorsArray = getColors();
-            randomColorsArray.OrderBy(x => rnd.Next()).ToArray();*/
-            //Console.WriteLine(randomColorsArray[0].ColorHex + "  " + randomColorsArray[1].ColorHex + "  " + randomColorsArray[2].ColorHex + "  " + randomColorsArray[3].ColorHex);
             return randomColorsArray;
         }
 
-        public static ConsoleColor parseConsoleColor(CableColor color)
+        public static ConsoleColor ParseConsoleColor(CableColor color)
         {
             if (color.Equals(RED))
             {

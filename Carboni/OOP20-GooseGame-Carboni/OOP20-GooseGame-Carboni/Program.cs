@@ -19,12 +19,12 @@ namespace OOP20_GooseGame_Carboni
                 switch (choiche)
                 {
                     case 1:
-                        MinigameController phraseCatch = new PhraseCatchController();
-                        lastResult = phraseCatch.getResult();
+                        IMinigameController phraseCatch = new PhraseCatchController();
+                        lastResult = phraseCatch.GetResult();
                         break;
                     case 2:
-                        MinigameController cableConnect = new CableConnectController();
-                        lastResult = cableConnect.getResult();
+                        IMinigameController cableConnect = new CableConnectController();
+                        lastResult = cableConnect.GetResult();
                         break;
                 }
             } while (choiche != 3);

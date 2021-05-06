@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP20_GooseGame_Carboni
 {
-    class PhraseCatchController : MinigameController
+    class PhraseCatchController : IMinigameController
     {
         
         private readonly IPhrase phrase;
@@ -26,7 +26,7 @@ namespace OOP20_GooseGame_Carboni
 
         }
 
-        public int getResult()
+        public int GetResult()
         {
             /*
              * the game the result is based on the remaining time

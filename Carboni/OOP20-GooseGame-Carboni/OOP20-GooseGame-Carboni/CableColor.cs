@@ -14,30 +14,24 @@ namespace OOP20_GooseGame_Carboni
          * where the hexcode can be returned via the get method.
          * (The hexCode is never used but it could be handy for a graphic implementation)
          */
-        /**
-         * Red color (#CF0000).
-         */
+
+        ///<summary>Red color (#CF0000).</summary>
         public static CableColor RED { get { return new CableColor("#CF0000"); } }
-        /**
-         * Blue color (#0000CF).
-         */
+
+        ///<summary>Blue color (#0000CF).</summary>
         public static CableColor BLUE { get { return new CableColor("#0000CF"); } }
-        /**
-         * Green color (#00CF00).
-         */
+
+        ///<summary>Yellow color (#CFCF00).</summary>
         public static CableColor GREEN { get { return new CableColor("#00CF00"); } }
-        /**
-         * Yellow color (#CFCF00).
-         */
+        
+        ///<summary>Yellow color (#CFCF00).</summary>
         public static CableColor YELLOW { get { return new CableColor("#CFCF00"); } }
 
 
         static CableColor[] Colors => new CableColor[] { RED, BLUE, GREEN, YELLOW };
 
-        /**
-         * Generates a random ordered array of colors.
-         * @return a random ordered array of colors.
-         */
+        ///<summary>Generates a random ordered array of colors.</summary>
+        ///<returns>a random ordered array of colors.</returns>
         public static CableColor[] GetRandomColors()
         {
             
@@ -54,9 +48,7 @@ namespace OOP20_GooseGame_Carboni
             return randomColorsArray;
         }
 
-        /**
-         * Parses a CableColor to its Corrispondente ConsoleColor.
-         */
+        ///<summary>Parses a CableColor to its Corrispondente ConsoleColor.</summary>
         public static ConsoleColor ParseConsoleColor(CableColor color)
         {
             if (color.Equals(RED))

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace OOP20_GooseGame_Carboni
 {
-    class CableConnectController : MinigameController
+    class CableConnectController : IMinigameController
     {
         private readonly int CABLES = 4;
         private readonly CableConnectView view;
@@ -52,7 +52,7 @@ namespace OOP20_GooseGame_Carboni
 
         }
 
-        public int getResult()
+        public int GetResult()
         {
             /*
              * the game the result is based on the remaining time

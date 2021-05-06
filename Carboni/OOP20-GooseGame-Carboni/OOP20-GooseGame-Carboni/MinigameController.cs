@@ -1,11 +1,9 @@
 ﻿namespace OOP20_GooseGame_Carboni
 {
-    internal interface MinigameController
+    internal interface IMinigameController
     {
-            /**
-             * 
-             * @return result of minigame.
-             */
-            int getResult();
+        
+        ///<returns>result of minigame.</returns>
+        int GetResult();
     }
 }
