@@ -35,13 +35,7 @@ namespace OOP20_GooseGame_Domi
             computerCode.Add(NUM_4);
 
             secretCode.SetCode(computerCode);
-
-            var sc = secretCode.GetCode();
-
-            var code = sc.Split(',')
-                         .Where(x => int.TryParse(x, out _))
-                         .Select(int.Parse)
-                         .ToList();
+            var code = secretCode.GetCode();
 
             for (int i = 0; i < code.Count; i++)
             {
@@ -50,6 +44,7 @@ namespace OOP20_GooseGame_Domi
                     errors++;
                 }
             }
+
             Assert.AreEqual(EXPECTED_ERRORS, errors);
 
         }

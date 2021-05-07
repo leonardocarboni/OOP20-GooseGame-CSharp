@@ -22,7 +22,7 @@ namespace OOP20_GooseGame_Domi
         /// Code as a string.
         /// </summary>
         /// <returns></returns>
-        string GetCode();
+        List<int> GetCode();
 
         /// <summary>
         /// Is use for Testing.

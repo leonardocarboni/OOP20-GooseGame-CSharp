@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace OOP20_GooseGame_Domi
@@ -26,7 +27,7 @@ namespace OOP20_GooseGame_Domi
                 for (int i = 0; i < SIZE; i++)
                 {
 
-                    if (!secretCode.ToArray()[i].Equals(inputCode.ToArray()[i]))
+                    if (!secretCode.ElementAt(i).Equals(inputCode.ElementAt(i)))
                     {
                         errors++;
                     }
@@ -44,9 +45,9 @@ namespace OOP20_GooseGame_Domi
             }
         }
 
-        public string GetCode()
+        public List<int> GetCode()
         {
-            return secretCode.ToString();
+            return secretCode;
         }
 
         public void SetCode(List<int> code)
