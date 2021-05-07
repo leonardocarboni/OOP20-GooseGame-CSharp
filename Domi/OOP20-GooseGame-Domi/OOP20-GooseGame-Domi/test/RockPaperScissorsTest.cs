@@ -13,11 +13,11 @@ namespace OOP20_GooseGame_Domi
         public void CheckWinner()
         {
             RockPaperScissorsChoiceMethods.SetComputerChoice(RockPaperScissorsChoice.ROCK);
-            rps = RockPaperScissorsChoiceMethods.GetRandomChoice();
+            rps = RockPaperScissorsChoiceMethods.GetComputerChoice();
 
             Assert.AreEqual(RockPaperScissorsChoice.ROCK, rps);
-            Assert.AreEqual(RockPaperScissorsChoice.PAPER, rps);
-            Assert.AreEqual(RockPaperScissorsChoice.SCISSORS, rps);
+            Assert.AreNotEqual(RockPaperScissorsChoice.PAPER, rps);
+            Assert.AreNotEqual(RockPaperScissorsChoice.SCISSORS, rps);
         }
         
     }
