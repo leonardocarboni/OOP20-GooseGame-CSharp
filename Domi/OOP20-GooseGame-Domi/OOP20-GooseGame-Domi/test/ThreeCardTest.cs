@@ -32,8 +32,8 @@ namespace OOP20_GooseGame_Domi
             var choices = ThreeCardGameChoiceMethods.GetComputerChoice();
 
             Assert.AreEqual(RIGHT_CHOISE, choices.ElementAt(0));
-            Assert.AreEqual(RIGHT_CHOISE, choices.ElementAt(1));
-            Assert.AreEqual(RIGHT_CHOISE, choices.ElementAt(2));
+            Assert.AreNotEqual(RIGHT_CHOISE, choices.ElementAt(1));
+            Assert.AreNotEqual(RIGHT_CHOISE, choices.ElementAt(2));
         }
 
         [TestMethod]
@@ -46,11 +46,8 @@ namespace OOP20_GooseGame_Domi
             Assert.AreNotEqual(WRONG_CHOISE_1, choices.ElementAt(0));
             Assert.AreNotEqual(WRONG_CHOISE_2, choices.ElementAt(0));
 
-            Assert.AreNotEqual(WRONG_CHOISE_1, choices.ElementAt(1));
             Assert.AreNotEqual(WRONG_CHOISE_2, choices.ElementAt(1));
-
             Assert.AreNotEqual(WRONG_CHOISE_1, choices.ElementAt(2));
-            Assert.AreNotEqual(WRONG_CHOISE_2, choices.ElementAt(2));
         }
     }
 }
