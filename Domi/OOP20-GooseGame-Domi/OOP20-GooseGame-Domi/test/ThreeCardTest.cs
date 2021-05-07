@@ -24,6 +24,9 @@ namespace OOP20_GooseGame_Domi
             hypoteticalChoices.Add(ThreeCardGameChoice.DX_POS);
         }
 
+        /// <summary>
+        /// Test to check win.
+        /// </summary>
         [TestMethod]
         public void CheckWin()
         {
@@ -36,6 +39,9 @@ namespace OOP20_GooseGame_Domi
             Assert.AreNotEqual(RIGHT_CHOISE, choices.ElementAt(2));
         }
 
+        /// <summary>
+        /// Test to check lose.
+        /// </summary>
         [TestMethod]
         public void CheckLose()
         {

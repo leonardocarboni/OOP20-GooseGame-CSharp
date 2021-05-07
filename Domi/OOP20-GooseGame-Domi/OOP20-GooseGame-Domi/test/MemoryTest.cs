@@ -14,6 +14,10 @@ namespace OOP20_GooseGame_Domi
         private static readonly int NUM_4 = 4;
         private static readonly int NUM_5 = 5;
 
+
+        /// <summary>
+        /// Test to check number of errors.
+        /// </summary>
         [TestMethod]
         public void CheckErrors()
         {

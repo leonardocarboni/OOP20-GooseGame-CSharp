@@ -9,6 +9,10 @@ namespace OOP20_GooseGame_Domi
     {
         private static RockPaperScissorsChoice rps;
 
+
+        /// <summary>
+        /// Check te win.
+        /// </summary>
         [TestMethod]
         public void CheckWinner()
         {
