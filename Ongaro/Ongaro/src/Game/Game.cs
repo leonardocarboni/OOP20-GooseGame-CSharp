@@ -5,15 +5,13 @@ using System.Collections.Generic;
 
 namespace Ongaro.game
 {
-    /**
-     * A simplified class of Game
-     */
     class Game : IGame
     {
         private static readonly int BOARD_SIZE = 42;
         private readonly IDice dice;
         private readonly IQueue playerQueue;
         private StateGame gameState;
+
         public Game()
         {
             playerQueue = new Queue();

@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ongaro.game;
 using Ongaro.player;
+using System;
 using System.Collections.Generic;
 
 namespace Ongaro.test
@@ -26,7 +27,8 @@ namespace Ongaro.test
             } while (!g.EndGame());
 
             Assert.IsTrue(g.EndGame());
-            Assert.IsTrue(list[0].BoardPosition >= BOARD_SIZE);
+            Console.WriteLine(list[0].BoardPosition);
+            Assert.IsTrue(list[0].BoardPosition >= BOARD_SIZE - 1);
         }
     }
 }

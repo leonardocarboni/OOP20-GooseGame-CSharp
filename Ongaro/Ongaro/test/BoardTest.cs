@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ongaro.board;
 using Ongaro.box;
+using Ongaro.exception;
 using System.Collections.Generic;
 
 namespace Ongaro.test
@@ -41,7 +42,7 @@ namespace Ongaro.test
         public void LaunchException()
         {
             IBoard board = new Board();
-            Assert.ThrowsException<System.Exception>(() => board.Size = 1);
+            _ = Assert.ThrowsException<IllegalArgumentException>(() => board.Size = 1);
         }
     }
 }

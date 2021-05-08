@@ -13,7 +13,7 @@ namespace Ongaro.player
         {
             if ("".Equals(this.name))
             {
-                throw new IllegalArgumentException();
+                throw new IllegalStateException();
             }
             this.name = name;
             this.color = color;

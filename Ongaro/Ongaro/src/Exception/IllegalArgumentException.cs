@@ -2,7 +2,7 @@
 
 namespace Ongaro.exception
 {
-    class IllegalArgumentException : Exception
+    public class IllegalArgumentException : Exception
     {
         public IllegalArgumentException()
         {

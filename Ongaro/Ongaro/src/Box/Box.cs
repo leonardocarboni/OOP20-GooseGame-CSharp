@@ -27,15 +27,17 @@ namespace Ongaro.box
         /// <returns> list of box</returns>
         public static List<Box> getBoxes()
         {
-            List<Box> list = new List<Box>();
-            list.Add(START);
-            list.Add(NORMAL);
-            list.Add(END);
-            list.Add(TICTACTOE);
-            list.Add(EVEN_OR_ODD);
-            list.Add(ROCK_PAPER_SCISSORS);
-            list.Add(CABLE_CONNECT);
-            list.Add(PHRASE_CATCH);
+            List<Box> list = new List<Box>
+            {
+                START,
+                NORMAL,
+                END,
+                TICTACTOE,
+                EVEN_OR_ODD,
+                ROCK_PAPER_SCISSORS,
+                CABLE_CONNECT,
+                PHRASE_CATCH
+            };
             return list;
         }
     }
