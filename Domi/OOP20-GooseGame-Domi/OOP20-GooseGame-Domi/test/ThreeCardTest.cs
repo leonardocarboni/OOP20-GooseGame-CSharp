@@ -11,8 +11,8 @@ namespace OOP20_GooseGame_Domi
         private static readonly ThreeCardGameChoice WRONG_CHOISE_1 = ThreeCardGameChoice.CENTER_POS;
         private static readonly ThreeCardGameChoice WRONG_CHOISE_2 = ThreeCardGameChoice.DX_POS;
 
-        private static List<ThreeCardGameChoice> hypoteticalChoices = new();
-        private static List<ThreeCardGameChoice> computerChoices = new();
+        private static List<ThreeCardGameChoice> hypoteticalChoices = new List<ThreeCardGameChoice>();
+        private static List<ThreeCardGameChoice> computerChoices = new List<ThreeCardGameChoice>();
 
         public void PopulateLists()
         {

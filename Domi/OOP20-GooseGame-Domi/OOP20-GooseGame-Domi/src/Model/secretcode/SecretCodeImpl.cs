@@ -11,7 +11,7 @@ namespace OOP20_GooseGame_Domi
         private static readonly int MIN_VALUE_CODE = 1;
 
         private readonly Random random = new Random();
-        private List<int> secretCode = new();
+        private List<int> secretCode = new List<int>();
 
 
         public int CheckCode(List<int> inputCode)

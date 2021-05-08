@@ -24,14 +24,14 @@ namespace OOP20_GooseGame_Domi
             ISecretCode secretCode = new SecretCodeImpl();
             int errors = 0;
 
-            List<int> inputCode = new();
+            List<int> inputCode = new List<int>();
             inputCode.Add(NUM_1);
             inputCode.Add(NUM_2);
             inputCode.Add(NUM_3);
             inputCode.Add(NUM_4);
             inputCode.Add(NUM_5);
 
-            List<int> computerCode = new();
+            List<int> computerCode = new List<int>();
             computerCode.Add(NUM_5);
             computerCode.Add(NUM_3);
             computerCode.Add(NUM_2);
