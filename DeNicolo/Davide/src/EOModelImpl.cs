@@ -19,7 +19,7 @@ namespace EOModelImpl
         public Choice CheckWin(int value)
         {
             /**
-             * Creo i valori random.
+             * Generate the random value.
              */
             Random rnd = new Random();
             int rndValue = rnd.Next(0, 10);

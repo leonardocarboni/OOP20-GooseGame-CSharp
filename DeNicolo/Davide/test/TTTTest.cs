@@ -29,7 +29,9 @@ namespace TTTTest
                 {
                     listButtonGrid.Insert(i, "-");
                 }
-
+                /*
+                 * Vince la X orizzontale
+                 */
                 for (int i = 0; i <= (BOUND) * (BOUND - 1); i += BOUND)
                 {
                     for (int j = 0; j < 2; j++)

@@ -13,6 +13,9 @@ namespace SpaceShooterTest
         private readonly int sizeShot = Info.SIZE_SHOT;
         private readonly int sizeEnemy = Info.SIZE_ENEMY;
         [TestMethod]
+        /*
+        * This test test the collision of the entity.
+        */
         public void TestMethod2()
         {
             double distance;

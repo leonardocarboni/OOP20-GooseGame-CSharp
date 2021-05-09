@@ -17,5 +17,8 @@ public interface EOModel
      */
     Choice CheckWin(int value);
 
+    /**
+     * Used for the result.
+     */
     bool GetResult();
 }
